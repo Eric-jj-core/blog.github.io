@@ -1,0 +1,3 @@
+执行 sudo rm /usr/bin/python 命令后，发现 Alfred 的workflow功能不好用了。网上查了一下，都是不要随意删除 mac系统自带的python版本。既然已经删除了，那就想办法把它恢复回来吧。
+还好没有删除 /System/Library/Frameworks/Python.framework/Versions 目录下的相应版本数据，否则要重新安装python了。
+然后在相同位置创建一个软链 sudo ln -s /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/bin/python 即可解决。
